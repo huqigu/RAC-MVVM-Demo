@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DD9160A569F6F49ECE1B7B6 /* libPods-RAC+MVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 662951AAC92D49377ADCE2C7 /* libPods-RAC+MVVM.a */; };
+		FD5492B521DA2AAB00FB8D50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5492B421DA2AAB00FB8D50 /* AppDelegate.m */; };
+		FD5492B821DA2AAB00FB8D50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5492B721DA2AAB00FB8D50 /* ViewController.m */; };
+		FD5492BB21DA2AAB00FB8D50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5492B921DA2AAB00FB8D50 /* Main.storyboard */; };
+		FD5492BD21DA2AAC00FB8D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5492BC21DA2AAC00FB8D50 /* Assets.xcassets */; };
+		FD5492C021DA2AAC00FB8D50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5492BE21DA2AAC00FB8D50 /* LaunchScreen.storyboard */; };
+		FD5492C321DA2AAC00FB8D50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5492C221DA2AAC00FB8D50 /* main.m */; };
+		FD5492CD21DA2AAD00FB8D50 /* RAC_MVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5492CC21DA2AAD00FB8D50 /* RAC_MVVMTests.m */; };
+		FD5492D821DA2AAD00FB8D50 /* RAC_MVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5492D721DA2AAD00FB8D50 /* RAC_MVVMUITests.m */; };
+		FD5492EC21DA35E800FB8D50 /* NewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5492EB21DA35E800FB8D50 /* NewsViewModel.m */; };
+		FD5492EF21DA35FA00FB8D50 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5492EE21DA35FA00FB8D50 /* NewsTableViewCell.m */; };
+		FD5492F221DA360800FB8D50 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5492F121DA360800FB8D50 /* NewsModel.m */; };
+		FD5492F521DA48F100FB8D50 /* ImagesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5492F421DA48F100FB8D50 /* ImagesTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD5492C921DA2AAD00FB8D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD5492A821DA2AAB00FB8D50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD5492AF21DA2AAB00FB8D50;
+			remoteInfo = "RAC+MVVM";
+		};
+		FD5492D421DA2AAD00FB8D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD5492A821DA2AAB00FB8D50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD5492AF21DA2AAB00FB8D50;
+			remoteInfo = "RAC+MVVM";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24694D2F492049AC505ECF27 /* Pods-RAC+MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC+MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAC+MVVM/Pods-RAC+MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		662951AAC92D49377ADCE2C7 /* libPods-RAC+MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RAC+MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6E37A077B90071D2EEAE24 /* Pods-RAC+MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC+MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC+MVVM/Pods-RAC+MVVM.release.xcconfig"; sourceTree = "<group>"; };
+		FD5492B021DA2AAB00FB8D50 /* RAC+MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RAC+MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5492B321DA2AAB00FB8D50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD5492B421DA2AAB00FB8D50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD5492B621DA2AAB00FB8D50 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD5492B721DA2AAB00FB8D50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD5492BA21DA2AAB00FB8D50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD5492BC21DA2AAC00FB8D50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD5492BF21DA2AAC00FB8D50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD5492C121DA2AAC00FB8D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5492C221DA2AAC00FB8D50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD5492C821DA2AAD00FB8D50 /* RAC+MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RAC+MVVMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5492CC21DA2AAD00FB8D50 /* RAC_MVVMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAC_MVVMTests.m; sourceTree = "<group>"; };
+		FD5492CE21DA2AAD00FB8D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5492D321DA2AAD00FB8D50 /* RAC+MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RAC+MVVMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5492D721DA2AAD00FB8D50 /* RAC_MVVMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAC_MVVMUITests.m; sourceTree = "<group>"; };
+		FD5492D921DA2AAD00FB8D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5492EA21DA35E800FB8D50 /* NewsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewModel.h; sourceTree = "<group>"; };
+		FD5492EB21DA35E800FB8D50 /* NewsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewModel.m; sourceTree = "<group>"; };
+		FD5492ED21DA35FA00FB8D50 /* NewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		FD5492EE21DA35FA00FB8D50 /* NewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		FD5492F021DA360800FB8D50 /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		FD5492F121DA360800FB8D50 /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		FD5492F321DA48F100FB8D50 /* ImagesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagesTableViewCell.h; sourceTree = "<group>"; };
+		FD5492F421DA48F100FB8D50 /* ImagesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagesTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD5492AD21DA2AAB00FB8D50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD9160A569F6F49ECE1B7B6 /* libPods-RAC+MVVM.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5492C521DA2AAD00FB8D50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5492D021DA2AAD00FB8D50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43355DFF59CC1652E04DC4E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24694D2F492049AC505ECF27 /* Pods-RAC+MVVM.debug.xcconfig */,
+				EA6E37A077B90071D2EEAE24 /* Pods-RAC+MVVM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78CC8032FE70D50FFB74704F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				662951AAC92D49377ADCE2C7 /* libPods-RAC+MVVM.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD5492A721DA2AAB00FB8D50 = {
+			isa = PBXGroup;
+			children = (
+				FD5492B221DA2AAB00FB8D50 /* RAC+MVVM */,
+				FD5492CB21DA2AAD00FB8D50 /* RAC+MVVMTests */,
+				FD5492D621DA2AAD00FB8D50 /* RAC+MVVMUITests */,
+				FD5492B121DA2AAB00FB8D50 /* Products */,
+				43355DFF59CC1652E04DC4E0 /* Pods */,
+				78CC8032FE70D50FFB74704F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD5492B121DA2AAB00FB8D50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD5492B021DA2AAB00FB8D50 /* RAC+MVVM.app */,
+				FD5492C821DA2AAD00FB8D50 /* RAC+MVVMTests.xctest */,
+				FD5492D321DA2AAD00FB8D50 /* RAC+MVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD5492B221DA2AAB00FB8D50 /* RAC+MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				FD5492E921DA2DB600FB8D50 /* Master */,
+				FD5492B321DA2AAB00FB8D50 /* AppDelegate.h */,
+				FD5492B421DA2AAB00FB8D50 /* AppDelegate.m */,
+				FD5492B921DA2AAB00FB8D50 /* Main.storyboard */,
+				FD5492BC21DA2AAC00FB8D50 /* Assets.xcassets */,
+				FD5492BE21DA2AAC00FB8D50 /* LaunchScreen.storyboard */,
+				FD5492C121DA2AAC00FB8D50 /* Info.plist */,
+				FD5492C221DA2AAC00FB8D50 /* main.m */,
+			);
+			path = "RAC+MVVM";
+			sourceTree = "<group>";
+		};
+		FD5492CB21DA2AAD00FB8D50 /* RAC+MVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD5492CC21DA2AAD00FB8D50 /* RAC_MVVMTests.m */,
+				FD5492CE21DA2AAD00FB8D50 /* Info.plist */,
+			);
+			path = "RAC+MVVMTests";
+			sourceTree = "<group>";
+		};
+		FD5492D621DA2AAD00FB8D50 /* RAC+MVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD5492D721DA2AAD00FB8D50 /* RAC_MVVMUITests.m */,
+				FD5492D921DA2AAD00FB8D50 /* Info.plist */,
+			);
+			path = "RAC+MVVMUITests";
+			sourceTree = "<group>";
+		};
+		FD5492E521DA2D4F00FB8D50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD5492EA21DA35E800FB8D50 /* NewsViewModel.h */,
+				FD5492EB21DA35E800FB8D50 /* NewsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FD5492E621DA2D8200FB8D50 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD5492B621DA2AAB00FB8D50 /* ViewController.h */,
+				FD5492B721DA2AAB00FB8D50 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD5492E721DA2D9500FB8D50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD5492F021DA360800FB8D50 /* NewsModel.h */,
+				FD5492F121DA360800FB8D50 /* NewsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD5492E821DA2DA300FB8D50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD5492ED21DA35FA00FB8D50 /* NewsTableViewCell.h */,
+				FD5492EE21DA35FA00FB8D50 /* NewsTableViewCell.m */,
+				FD5492F321DA48F100FB8D50 /* ImagesTableViewCell.h */,
+				FD5492F421DA48F100FB8D50 /* ImagesTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD5492E921DA2DB600FB8D50 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				FD5492E621DA2D8200FB8D50 /* Controller */,
+				FD5492E721DA2D9500FB8D50 /* Model */,
+				FD5492E821DA2DA300FB8D50 /* View */,
+				FD5492E521DA2D4F00FB8D50 /* ViewModel */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD5492AF21DA2AAB00FB8D50 /* RAC+MVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5492DC21DA2AAD00FB8D50 /* Build configuration list for PBXNativeTarget "RAC+MVVM" */;
+			buildPhases = (
+				A62B6C078D2FA7B5A2B63205 /* [CP] Check Pods Manifest.lock */,
+				FD5492AC21DA2AAB00FB8D50 /* Sources */,
+				FD5492AD21DA2AAB00FB8D50 /* Frameworks */,
+				FD5492AE21DA2AAB00FB8D50 /* Resources */,
+				F5EEA510719DF054BED92389 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RAC+MVVM";
+			productName = "RAC+MVVM";
+			productReference = FD5492B021DA2AAB00FB8D50 /* RAC+MVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD5492C721DA2AAD00FB8D50 /* RAC+MVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5492DF21DA2AAD00FB8D50 /* Build configuration list for PBXNativeTarget "RAC+MVVMTests" */;
+			buildPhases = (
+				FD5492C421DA2AAD00FB8D50 /* Sources */,
+				FD5492C521DA2AAD00FB8D50 /* Frameworks */,
+				FD5492C621DA2AAD00FB8D50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD5492CA21DA2AAD00FB8D50 /* PBXTargetDependency */,
+			);
+			name = "RAC+MVVMTests";
+			productName = "RAC+MVVMTests";
+			productReference = FD5492C821DA2AAD00FB8D50 /* RAC+MVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD5492D221DA2AAD00FB8D50 /* RAC+MVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5492E221DA2AAD00FB8D50 /* Build configuration list for PBXNativeTarget "RAC+MVVMUITests" */;
+			buildPhases = (
+				FD5492CF21DA2AAD00FB8D50 /* Sources */,
+				FD5492D021DA2AAD00FB8D50 /* Frameworks */,
+				FD5492D121DA2AAD00FB8D50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD5492D521DA2AAD00FB8D50 /* PBXTargetDependency */,
+			);
+			name = "RAC+MVVMUITests";
+			productName = "RAC+MVVMUITests";
+			productReference = FD5492D321DA2AAD00FB8D50 /* RAC+MVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD5492A821DA2AAB00FB8D50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = yellow;
+				TargetAttributes = {
+					FD5492AF21DA2AAB00FB8D50 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					FD5492C721DA2AAD00FB8D50 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FD5492AF21DA2AAB00FB8D50;
+					};
+					FD5492D221DA2AAD00FB8D50 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = FD5492AF21DA2AAB00FB8D50;
+					};
+				};
+			};
+			buildConfigurationList = FD5492AB21DA2AAB00FB8D50 /* Build configuration list for PBXProject "RAC+MVVM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD5492A721DA2AAB00FB8D50;
+			productRefGroup = FD5492B121DA2AAB00FB8D50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD5492AF21DA2AAB00FB8D50 /* RAC+MVVM */,
+				FD5492C721DA2AAD00FB8D50 /* RAC+MVVMTests */,
+				FD5492D221DA2AAD00FB8D50 /* RAC+MVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD5492AE21DA2AAB00FB8D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5492C021DA2AAC00FB8D50 /* LaunchScreen.storyboard in Resources */,
+				FD5492BD21DA2AAC00FB8D50 /* Assets.xcassets in Resources */,
+				FD5492BB21DA2AAB00FB8D50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5492C621DA2AAD00FB8D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5492D121DA2AAD00FB8D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A62B6C078D2FA7B5A2B63205 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RAC+MVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5EEA510719DF054BED92389 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RAC+MVVM/Pods-RAC+MVVM-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAC+MVVM/Pods-RAC+MVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD5492AC21DA2AAB00FB8D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5492B821DA2AAB00FB8D50 /* ViewController.m in Sources */,
+				FD5492EF21DA35FA00FB8D50 /* NewsTableViewCell.m in Sources */,
+				FD5492C321DA2AAC00FB8D50 /* main.m in Sources */,
+				FD5492F521DA48F100FB8D50 /* ImagesTableViewCell.m in Sources */,
+				FD5492B521DA2AAB00FB8D50 /* AppDelegate.m in Sources */,
+				FD5492F221DA360800FB8D50 /* NewsModel.m in Sources */,
+				FD5492EC21DA35E800FB8D50 /* NewsViewModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5492C421DA2AAD00FB8D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5492CD21DA2AAD00FB8D50 /* RAC_MVVMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5492CF21DA2AAD00FB8D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5492D821DA2AAD00FB8D50 /* RAC_MVVMUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD5492CA21DA2AAD00FB8D50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD5492AF21DA2AAB00FB8D50 /* RAC+MVVM */;
+			targetProxy = FD5492C921DA2AAD00FB8D50 /* PBXContainerItemProxy */;
+		};
+		FD5492D521DA2AAD00FB8D50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD5492AF21DA2AAB00FB8D50 /* RAC+MVVM */;
+			targetProxy = FD5492D421DA2AAD00FB8D50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD5492B921DA2AAB00FB8D50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD5492BA21DA2AAB00FB8D50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD5492BE21DA2AAC00FB8D50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD5492BF21DA2AAC00FB8D50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD5492DA21DA2AAD00FB8D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD5492DB21DA2AAD00FB8D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD5492DD21DA2AAD00FB8D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24694D2F492049AC505ECF27 /* Pods-RAC+MVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RAC+MVVM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yellow.RAC-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD5492DE21DA2AAD00FB8D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA6E37A077B90071D2EEAE24 /* Pods-RAC+MVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RAC+MVVM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yellow.RAC-MVVM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD5492E021DA2AAD00FB8D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RAC+MVVMTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yellow.RAC-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RAC+MVVM.app/RAC+MVVM";
+			};
+			name = Debug;
+		};
+		FD5492E121DA2AAD00FB8D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RAC+MVVMTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yellow.RAC-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RAC+MVVM.app/RAC+MVVM";
+			};
+			name = Release;
+		};
+		FD5492E321DA2AAD00FB8D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RAC+MVVMUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yellow.RAC-MVVMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RAC+MVVM";
+			};
+			name = Debug;
+		};
+		FD5492E421DA2AAD00FB8D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "RAC+MVVMUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "yellow.RAC-MVVMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RAC+MVVM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD5492AB21DA2AAB00FB8D50 /* Build configuration list for PBXProject "RAC+MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5492DA21DA2AAD00FB8D50 /* Debug */,
+				FD5492DB21DA2AAD00FB8D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5492DC21DA2AAD00FB8D50 /* Build configuration list for PBXNativeTarget "RAC+MVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5492DD21DA2AAD00FB8D50 /* Debug */,
+				FD5492DE21DA2AAD00FB8D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5492DF21DA2AAD00FB8D50 /* Build configuration list for PBXNativeTarget "RAC+MVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5492E021DA2AAD00FB8D50 /* Debug */,
+				FD5492E121DA2AAD00FB8D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5492E221DA2AAD00FB8D50 /* Build configuration list for PBXNativeTarget "RAC+MVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5492E321DA2AAD00FB8D50 /* Debug */,
+				FD5492E421DA2AAD00FB8D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD5492A821DA2AAB00FB8D50 /* Project object */;
+}
