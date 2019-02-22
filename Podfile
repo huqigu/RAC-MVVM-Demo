@@ -7,5 +7,6 @@ target 'RAC+MVVM' do
 	pod 'Masonry'
 	pod 'MJExtension'
 	pod 'SVProgressHUD'
+    pod 'FLEX', '~> 2.0', :configurations => ['Debug']
 end
 

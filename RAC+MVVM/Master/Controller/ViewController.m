@@ -13,6 +13,7 @@
 #import "NewsTableViewCell.h"
 #import "ImagesTableViewCell.h"
 #import "SVProgressHud.h"
+#import "FLEXManager.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView *tableView;
@@ -40,6 +41,10 @@
     [self initSubViews];
     
     [self bindViewModel];
+    
+    // 添加手势唤起FLEX
+    UISwipeGestureRecognizer *swipeGR = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeGR)];
+    [self.view addGestureRecognizer:swipeGR];
 }
 
 
@@ -96,6 +101,10 @@
         [SVProgressHUD dismissWithDelay:1.5];
     }];
     
+}
+
+- (void)handleSwipeGR {
+    [[FLEXManager sharedManager] showExplorer];
 }
 
 #pragma mark - UITableViewDataSource
